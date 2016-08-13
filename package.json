@@ -1,8 +1,8 @@
 {
-  "name": "TravelAppWeb",
+  "name": "Hanoi IoT",
   "version": "0.0.1",
   "private": true,
-  "description": "A travel app",
+  "description": "An app",
   "devDependencies": {
     "gulp": "^3.5.6",
     "gulp-less": "^1.2.3",
