@@ -76,7 +76,7 @@
                           data-show-faces="true">
                         </div> -->
                         <div>
-                            <a href="https://itunes.apple.com/us/app/hop-a-path/id961454075?ls=1&mt=8"><img src="img/iphone-download-badge-232-80.png"></a>
+                            <img src="img/iphone-download-badge-232-80.png">
                             <img src="img/android-download-badge-245-80.png">
                         </div>
                     </div>
@@ -123,11 +123,12 @@
 <!-- END PAGE CONTENT -->
 
     <footer class="container text-center">
-        <p>&copy; Hanoi IoT 2016</p>
-        <!-- TODO add sitemap here -->
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms</a>
-        <a href="faq.html">FAQ</a>
+        <p>&copy; Hanoi IoT 2016 | 
+            <!-- TODO add sitemap here -->
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms</a> | 
+            <a href="faq.html">FAQ</a>
+        </p>
     </footer>
 
     <!-- Core JavaScript Files -->
@@ -149,6 +150,32 @@
       ga('send', 'pageview');
 
     </script> -->
+
+    <!-- inline jquery.  TODO put this in angular -->
+    <script type="text/javascript">
+        // set background image for fixed background-section
+        $.backstretch("/img/guatemala.jpg");
+
+        $(document).ready(function() {
+            //jQuery for page scrolling feature - requires jQuery Easing plugin - TODO maybe replace with ngScrollTo
+            $('.page-scroll a').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+
+            //jQuery to collapse the navbar on scroll
+            $(window).scroll(function() {
+                if ($(".navbar-home").offset().top > 50) {
+                    $(".navbar-fixed-top").addClass("top-nav-collapse");
+                } else {
+                    $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                }
+            });
+        });
+    </script>
 
 </body>
 
