@@ -156,7 +156,8 @@ img.bunny-logo {
 }
 .intro-body {
   display: table-cell;
-  vertical-align: bottom;
+  vertical-align: middle;
+  /* bottom */
   /* CHANGED */
 }
 .brand-heading {
