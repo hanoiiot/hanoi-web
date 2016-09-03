@@ -136,7 +136,8 @@ img.bunny-logo {
   /* CHANGED */
   text-align: center;
   color: #ffffff;
-  background: url(../img/intro-bg.jpg) no-repeat center center scroll;
+  background: linear-gradient(42deg, #e96443 0%, #904e95 100%);
+  /* url(../img/intro-bg.jpg) no-repeat center center scroll; */
   /* CHANGED */
   background-color: #000000;
   -webkit-background-size: cover;
