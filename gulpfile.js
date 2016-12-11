@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var path = require('path');
@@ -10,13 +10,13 @@ var args = require('yargs').argv;
 var gulpNgConfig = require('gulp-ng-config');
 
 var paths = {
-  less: ['./less/**/*.less']
+  sass: ['./sass/**/*.scss']
 };
 
-gulp.task('less', function(done) {
-  gulp.src(paths.less)
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
+gulp.task('sass', function(done) {
+  gulp.src(paths.sass)
+    .pipe(sass({
+      paths: [ path.join(__dirname, 'sass', 'includes') ],
     }))
     .pipe(gulp.dest('./css/'))
     // .pipe(minifyCss({
@@ -37,7 +37,7 @@ gulp.task('uglify', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.less, ['less']);
+  gulp.watch(paths.sass, ['sass']);
 });
 
 // usage: gulp config --env production
