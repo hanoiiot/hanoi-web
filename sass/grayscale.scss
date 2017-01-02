@@ -172,12 +172,7 @@ img.bunny-logo {
   padding: 200px 0 0 0; /* CHANGED */
   text-align: center;
   color: $light;
-  background: #e96443; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #e96443 0%, #904e95 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #e96443 0%,#904e95 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #e96443 0%,#904e95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e96443', endColorstr='#904e95',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ /* url(../img/intro-bg.jpg) no-repeat center center scroll; */ /* CHANGED */
-  background-color: $dark;
+  background: url(../img/elegant_home.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -194,8 +189,13 @@ img.bunny-logo {
 }
 
 .intro-text {
+  color: #ffffff;
+  // color: #92f7fa;
   font-size: 18px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #010531;
+  h3{
+    margin: 0 0 20px;
+  }
 }
 
 @media(min-width:767px) {
@@ -206,6 +206,12 @@ img.bunny-logo {
 
   .intro-text {
     padding-top: 220px;
+  }
+
+  .download-badges{
+    img{
+      margin: 4px;
+    }
   }
 }
 
