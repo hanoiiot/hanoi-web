@@ -89,7 +89,8 @@ a:focus {
 }
 
 .navbar-brand {
-  font-weight: 700;
+  margin-top: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -139,18 +140,21 @@ a:focus {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: $dark;
+    background-color: rgba(29,29,29,0.9);
   }
 
   .navbar-home.top-nav-collapse {
     border-bottom: 1px solid rgba(255,255,255,0.3);
   }
+
+  .navbar-right {
+    margin-top: 16px;
+  }
 }
 
-img.bunny-logo {
+img.hanoi-logo {
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 10px;
   width: 50px;
   height: 50px;
 }
