@@ -53,7 +53,7 @@
                         <a href="#download">Download</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#why">Why?</a>
+                        <a href="#what">What is Hanoi?</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#our-story">Our Story</a>
@@ -90,12 +90,45 @@
         </div>
     </section>
 
-    <section id="why" class="why-section text-left">
+    <section id="what" class="why-section text-left">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Why Hanoi IoT?</h2>
+                <h2>What is Hanoi?</h2>
+            </div>
+            <div class="col-lg-12">
+                <span class="col-sm-4 logos">
+                    <div class="row">
+                        <img src="img/logo_organize.png">
+                    </div>
+                    <div class="row">
+                        <img src="img/logo_smartthings.png">
+                    </div>
+                    <div class="row">
+                        <img src="img/logo_hue.png">
+                    </div>
+                </span>
+                <span class="col-sm-4 arrow-diagram">
+                    <img src="img/arrow-diagram.png">
+                </span>
+                <span class="col-sm-4 logos">
+                    <div class="row">
+                        <img src="img/logo_nest.png">
+                    </div>
+                    <div class="row">
+                        <img src="img/logo_hue_bridge.png">
+                    </div>
+                    <div class="row">
+                        <img src="img/logo_control.png">
+                    </div>
+                </span>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
                 <ul>
-                    <li>Connect your nest and your Samsung smart home (more coming soon!)</li>
+                    <li>Hanoi is a remote control for your home.</li>
+                    <li>Hanoi organizes all of your internet-connected devices.</li>
+                    <li>Hanoi is a simple, intuitive interface.</li>
+                    <li>Hanoi allows you direct control of all of the most popular smart devices:</li>
+                    <li>Philips Hue lights, Nest thermostats, SmartThings lights &amp; switches</li>
                 </ul>
             </div>
         </div>
@@ -111,12 +144,7 @@
     <section id="our-story" class="our-story-section text-center">
         <div class="row">
             <h2>Our Story</h2>
-            <div class="col-md-3 col-md-offset-2">
-                <div class="well">
-                    <img src="img/jesse-vince-400.jpg">
-                </div>
-            </div>
-            <div class="col-md-5 text-left">
+            <div class="our-quote col-md-5 text-center">
                 <blockquote>Hanoi IoT was started while on a trip in Vietnam as an idea to make smart devices more interconnected and accessible to the everyday consumer in their home. &nbsp;&nbsp;&nbsp;~ Jesse and Vincent</blockquote>
             </div>
         </div>
@@ -163,7 +191,7 @@
             $('.page-scroll a').bind('click', function(event) {
                 var $anchor = $(this);
                 $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
+                    scrollTop: $($anchor.attr('href')).offset().top - $(".navbar-fixed-top").height()
                 }, 1500, 'easeInOutExpo');
                 event.preventDefault();
             });

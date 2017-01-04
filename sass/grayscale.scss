@@ -4,6 +4,10 @@ $primary: #2bccd3;
 $dark: #000;
 $light: #fff;
 
+$grapefruit: #fd5956;
+$dusty-plum: #904e95;
+$bg-gradient-angle: 42deg;
+
 // LESS
 
 body {
@@ -140,11 +144,11 @@ a:focus {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: rgba(29,29,29,0.9);
+    background-color: rgba(20,20,20,0.8);
   }
 
   .navbar-home.top-nav-collapse {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(58,58,58,0.45);
   }
 
   .navbar-right {
@@ -288,8 +292,13 @@ img.profile {
 
 .our-story-section {
   padding: 30px 0;
-  background-color: $light;
+  min-height: 300px;
+  background: url(../img/jesse-vince.jpg) no-repeat center center scroll;
   color: black;
+  .our-quote{
+    margin: 0px auto;
+    float: none;
+  }
 }
 .path {
   padding: 30px 0;
@@ -297,8 +306,30 @@ img.profile {
 }
 
 .why-section {
+  color: #ffffff;
   padding: 60px 40px 40px 40px;
-  background-color: $light;
+
+  background: $grapefruit; /* Old browsers */
+  background: -moz-linear-gradient($bg-gradient-angle, $grapefruit 0%, $dusty-plum 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient($bg-gradient-angle, $grapefruit 0%, $dusty-plum 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient($bg-gradient-angle, $grapefruit 0%, $dusty-plum 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  img{
+    max-width:100%;
+    max-height:100%;
+
+    -moz-filter: brightness(3);
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
+  }
+  .arrow-diagram{
+    padding-top: 35px;
+  }
+  .logos{
+    .row{
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .why-section li:before {
