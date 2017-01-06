@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.grapefruit-sunset, .why-section {
+  background: #fd5956;
+  /* Old browsers */
+  background: -moz-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
 body {
   width: 100%;
   height: 100%;
@@ -63,7 +73,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: rgba(20, 20, 20, 0.5); }
+  background-color: rgba(20, 20, 20, 0.8); }
 
 .navbar-brand {
   margin-top: 16px;
@@ -142,6 +152,12 @@ img.hanoi-logo {
   background-size: cover;
   -o-background-size: cover; }
 
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 100px; }
+    .intro .hero {
+      padding: 20px 0; } }
+
 .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -219,7 +235,6 @@ img.profile {
 .our-story-section {
   padding: 30px 0;
   min-height: 400px;
-  min-width: 100%;
   background: url(../img/jesse-vince.jpg) no-repeat center center scroll;
   color: black; }
   .our-story-section .our-story-title {
@@ -230,12 +245,24 @@ img.profile {
     .our-story-section .our-quote blockquote {
       border: none;
       font-size: 16px; }
+  .our-story-section .tiny-founders {
+    display: none; }
 
 @media (min-width: 1600px) {
   .our-story-section {
+    min-height: 750px;
     background: url(../img/jesse-vince-wide.jpg) no-repeat center center scroll; }
     .our-story-section .our-quote blockquote {
-      font-size: 20px; } }
+      padding-top: 120px;
+      font-size: 30px; } }
+
+@media (max-width: 767px) {
+  .our-story-section {
+    color: #ffffff;
+    background: rgba(20, 20, 20, 0.9); }
+    .our-story-section .tiny-founders {
+      display: block;
+      margin: 20px auto; } }
 
 .path {
   padding: 30px 0;
@@ -244,21 +271,17 @@ img.profile {
 .why-section {
   color: #ffffff;
   padding: 60px 40px 40px 40px;
-  font-size: 120%;
-  background: #fd5956;
-  /* Old browsers */
-  background: -moz-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  font-size: 120%; }
   .why-section img {
     display: block;
     margin: auto;
     max-width: 100%;
     max-height: 100%;
     padding-bottom: 10px; }
+
+@media (max-width: 767px) {
+  .why-section {
+    background: rgba(20, 20, 20, 0.9); } }
 
 .why-section li:before {
   content: '✔';
