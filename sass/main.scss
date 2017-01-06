@@ -10,7 +10,7 @@ $bg-gradient-angle: 42deg;
 
 // LESS
 
-.grapefruit-sunset{
+@mixin grapefruit-sunset{
   background: $grapefruit; /* Old browsers */
   background: -moz-linear-gradient($bg-gradient-angle, $grapefruit 0%, $dusty-plum 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient($bg-gradient-angle, $grapefruit 0%, $dusty-plum 100%); /* Chrome10-25,Safari5.1-6 */
@@ -196,7 +196,7 @@ img.hanoi-logo {
   .intro{
     padding-top: 100px;
     .hero{
-      padding: 20px 0;
+      padding: 20px 0px 50px 0px;
     }
   }
 }
@@ -340,7 +340,7 @@ img.profile {
 @media(max-width:767px) {
   .our-story-section {
     color: #ffffff;
-    background: rgba(20,20,20,0.9);
+    background: $primary;
     .tiny-founders{
       display: block;
       margin: 20px auto;
@@ -359,7 +359,7 @@ img.profile {
   padding: 60px 40px 40px 40px;
   font-size: 120%;
 
-  @extend .grapefruit-sunset;
+  @include grapefruit-sunset;
 
   img{
     display: block;
@@ -373,7 +373,7 @@ img.profile {
 
 @media(max-width:767px) {
   .why-section {
-    background: rgba(20,20,20,0.9);
+    @include grapefruit-sunset;
   }
 }
 

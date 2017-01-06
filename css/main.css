@@ -1,14 +1,4 @@
 @charset "UTF-8";
-.grapefruit-sunset, .why-section {
-  background: #fd5956;
-  /* Old browsers */
-  background: -moz-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(42deg, #fd5956 0%, #904e95 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-
 body {
   width: 100%;
   height: 100%;
@@ -156,7 +146,7 @@ img.hanoi-logo {
   .intro {
     padding-top: 100px; }
     .intro .hero {
-      padding: 20px 0; } }
+      padding: 20px 0px 50px 0px; } }
 
 .intro-body {
   display: table-cell;
@@ -259,7 +249,7 @@ img.profile {
 @media (max-width: 767px) {
   .our-story-section {
     color: #ffffff;
-    background: rgba(20, 20, 20, 0.9); }
+    background: #387ef5; }
     .our-story-section .tiny-founders {
       display: block;
       margin: 20px auto; } }
@@ -271,7 +261,15 @@ img.profile {
 .why-section {
   color: #ffffff;
   padding: 60px 40px 40px 40px;
-  font-size: 120%; }
+  font-size: 120%;
+  background: #fd5956;
+  /* Old browsers */
+  background: -moz-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   .why-section img {
     display: block;
     margin: auto;
@@ -281,7 +279,14 @@ img.profile {
 
 @media (max-width: 767px) {
   .why-section {
-    background: rgba(20, 20, 20, 0.9); } }
+    background: #fd5956;
+    /* Old browsers */
+    background: -moz-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(42deg, #fd5956 0%, #904e95 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ } }
 
 .why-section li:before {
   content: '✔';
