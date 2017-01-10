@@ -248,11 +248,15 @@ img.profile {
 
 @media (max-width: 767px) {
   .our-story-section {
-    color: #ffffff;
-    background: #387ef5; }
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8); 
+  }
     .our-story-section .tiny-founders {
       display: block;
-      margin: 20px auto; } }
+      max-width: 95%;
+      margin: 20px auto; 
+  } 
+}
 
 .path {
   padding: 30px 0;
